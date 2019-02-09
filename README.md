@@ -16,16 +16,13 @@ So, whenever we have sufficient amount of data and we need to extract some valua
 The problem on which this project is based on is predicting critical chain length of a desired polymer corresponding to its saturated solubility parameter.<br/><br/>
 **Critical Chain Length & Saturated Solubility Parameter**<br/>
 Solubility parameter of a polymer depends on its chain length and after a certain chain length it becomes saturated (no more significant change) *more details can be found in literature*<br/>
-In the below we can see the data of solubility parameter vs chain length of PAN. We can see that it becomes saturated at a chain length around 50.
 
-![](https://github.com/pashupati98/polymer-property-prediction-using-machine-learning/blob/master/solubility.PNG)
-
-Now the issue is the calculation of this value. For this we first need to simulate a polymer (say PAN) of varying chain length (e.g. 2, 8, 16 ...) and calculate various parameters related to interaction energy, free volume etc. using molecular dynamic simulation then we need to calculate solubility parameter. This process is very slow, computesionaly expensive and inefficient. Our apporach is to solve this problem using machine learning so that we can directly predict the chain length at which the solubility parameter of a polymer will become saturated.
+Now the issue is the calculation of this value which involves molecular simulations. This process is very slow, computesionaly expensive and inefficient. Our apporach is to solve this problem using machine learning so that we can directly predict the chain length at which the solubility parameter of a polymer will become saturated.
 <br/><br/>
 # Machine Learning based solution
 So, we are trying to train a machine learning model on a dataset which is having the data of polymers and their critical chain length. The very first issue is making such dataset because we need all the data in mathematical form. We used group conribution theory and developed a python program which is used extract features from a repeting unit structure and make a fingerprint of that polymer using feature vectors and ultimately represents the polymer in numerical form. So, the processed dataset have numerical representation of a polymer and its critical chain length.<br/><br/>
-![](https://github.com/pashupati98/polymer-property-prediction-using-machine-learning/blob/master/dat.PNG)</br>
-</br>Next we developed a mchine learning model using scikit-learn module to learn the dependency of critical chain length on various features. Firstly we used linear hypothesis for this purpose because we need continuous outputs. Now we are working on support vector regression model to get better efficiency. We are also working on self evolving machine learning algorithms.
+
+</br>Next we are developing a machine learning model from scratch to learn the dependency of critical chain length on various features. Firstly we used linear hypothesis for this purpose because we need continuous outputs. Now we are working on support vector regression model to get better efficiency. We are also working on self evolving machine learning algorithms.
 <br/><br/>
 **Challenges**<br/>
 1) Appropriate numerical representation of a polymer (Using some optimization algorithm)<br/>
