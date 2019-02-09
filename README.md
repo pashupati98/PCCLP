@@ -9,7 +9,7 @@ i.e. <br/><br/>
 So, whenever we have sufficient amount of data and we need to extract some valuable information from that or need to make some prediction, we can use appropriate machine learning algorithm.
 <br/><br/>
 
-**Disclaimer**<br/>This is the very initial documentation of the project which involves little information (which is open source) about it in order to keep things confidential. Neither codes nor any result is made available for the same<br/>For more details please write to : pgupta4@ch.iitr.ac.in
+**Disclaimer**<br/>This is the very initial documentation of the project which involves little information (which is open source) about it in order to keep things confidential. Neither codes nor any result is made available for the same reason.<br/>For more details please write to : pgupta4@ch.iitr.ac.in
 <br/><br/>
 
 # Problem Statement
