@@ -1,0 +1,189 @@
+body{
+    background-image: url("img1.jpg");
+    background-color: #cccccc;
+}
+
+.header{
+    color: white;
+      
+}
+
+.header h1{
+    text-align: center;
+    font-size: 30px; 
+    font-weight: bold;
+    text-shadow: 1px 0px 1px white;
+    font-family: sans-serif;
+}
+
+.header p{
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+    text-shadow: 1px 0px 1px white;
+    font-family: sans-serif;
+    padding-bottom: 0px;
+    border: 0px solid black;
+}
+
+.bottom h1{
+    text-align: center;
+    font-size: 30px; 
+    font-weight: bold;
+    text-shadow: 1px 0px 1px white;
+    font-family: sans-serif;
+}
+
+.bottom p{
+    color: white;
+    text-align: center;
+    font-size: 15px; 
+    text-shadow: 1px 0px 1px white;
+    font-family: sans-serif;
+    padding-bottom: 0px;
+    border: 0px solid black;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: inherit;
+}
+
+.footer p{
+    padding-top: 5px;
+    padding-bottom: -5px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+table{
+    background-color: #3b5998;
+    color: white;
+    padding-left: 480px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+table tr{
+}
+
+table tr td{
+    border: 0px solid white;
+    padding: 0px;
+}
+
+.bodyleft{
+    margin-top: 0px;
+    border: 0px solid black;
+    width: 48%;
+    clear: both;
+    float: left;
+}
+ 
+.bodyleft p{
+    margin-left: 120px;
+    margin-right: 50px;
+    color: #0e385f;
+    font-size: 24px;
+    font-weight: bold;
+    border: 0px solid black;
+    text-shadow: 0px 0px 0px #0e385f;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+img{
+    border: 0px solid black;
+    height: 200px;
+    margin-left: 97px;
+}
+
+.bodyright{
+    border: 0px solid black;
+    margin-left: 0px;
+    width: 50%;
+    float: right;
+    
+    
+}
+
+.bodyright p{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    color: black;
+    font-size: 40px;
+    font-weight: normal;
+    border: 0px solid black;
+    text-align: left;
+    font-weight: 200;
+
+}
+
+.reg{
+    font-size: 25px;
+    padding-top: 0px;
+    border: 0px solid black;
+    font-weight: normal;
+}
+
+.registration{
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.registration p{
+    font-size: 15px;
+    width: 380px;
+    
+}
+
+.radius1{
+    border-radius: 5px;
+    height: 35px;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 0px;
+    width: 225px;
+}
+
+.need{
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.need:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.radius{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+    height: 35px;
+    width: 450px;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 0px;
+}
+
+.title { 
+    font-family: 'Helvetica Neue'; 
+    color:white;
+    background-color: darkgreen; 
+    font-weight:normal; 
+    text-align:center; 
+    font-size:27px;
+    width: auto;
+    line-height: 30px;
+    border-radius: 5px;
+    
+}

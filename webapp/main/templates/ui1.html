@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<title>Estimator</title>
+</head>
+	<body style="background-color:powderblue;">
+
+        <div class="header">
+            <h1 style="text-align:center; font-size: 30px; font-weight: bold; text-shadow: 1px 0px 1px white; font-family: sans-serif;">Estimator</h1>
+            <p style="text-align:center; font-size: 20px; font-weight: bold; text-shadow: 1px 0px 1px white; font-family: sans-serif;">A Machine Learning enabled platform to estimate critical chain length of a polymer corresponding to its saturated solubility parameter</p>
+            <hr>
+
+        </div> <!-- div header ends -->
+
+        <div class="row" style="padding-top:5%;">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="login well" align="center">
+                    <p align=center id=message></p><br/>
+{#                     <form method="post" action="/run/?format=json" enctype="multipart/form-data" >#}
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign"></i></span>
+						  <input id="repunit" class="form-control" name="repunit" type="text" placeholder="Enter Repeating Unit" autofocus>
+                        </div>
+                        <br>
+                        <input onclick="submit()" class="btn btn-success" id="submit" type="submit" value="Submit">
+{#                     </form>#}
+				</div>
+                <div id="result"/>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+
+
+
+        <div class="bottom">
+            </div> <!-- div bottom ends -->
+        <div class="footer" style="position:fixed; left: 0; bottom: 0; width: 100%;">
+            <hr>
+            <p style="text-align:center; font-size: 15px; text-shadow: 1px 0px 1px white; font-family: sans-serif;"> Guidelines to use : Enter you repeating unit using alphanumerics and dash sign. Capital letters should be used. Example : For poly(ethylene-oxide) entry should be -CH2-CH2-O-</p>
+            <p style="text-align:center; font-size: 15px; text-shadow: 1px 0px 1px white; font-family: sans-serif;"> Additional Information : The machine learning model currently being used is gradient boosted decision tree regression. For more information visit <a href="https://pashupati98.github.io/">Documentation</a></p>
+            <p style="text-align:center;"> &copy; Pashupati Gupta (<a href="https://pashupati98.github.io/">Know More</a>) </p>
+        </div>
+
+
+
+
+
+<script>
+    function submit(event) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("result").innerHTML = "Predicted critical chain length is : "+this.responseText;
+    }
+  };
+  xhttp.open("POST", "run/", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("repunit="+document.getElementById("repunit").value);
+}
+</script>
+    </body>
+</html>

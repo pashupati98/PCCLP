@@ -1,0 +1,9 @@
+django
+django-rest-framework
+numpy
+pandas
+gunicorn
+sklearn
+
+
+
