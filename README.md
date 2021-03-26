@@ -1,4 +1,4 @@
-# polymer-property-prediction-using-machine-learning
+# polymer-critical-chain-length-predictior-using-machine-learning
 
 Now-a-days machine learning is extensively being used by researchers to accelerate the development process of novel materials. Development of novel polymers can also be accelerated by using machine learning algorithms in many ways. 
 i.e. <br/><br/>
