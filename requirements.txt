@@ -204,7 +204,7 @@ Twisted==18.7.0
 typed-ast==1.1.0
 typing==3.6.6
 unicodecsv==0.14.1
-urllib3==1.23
+urllib3==1.26.5
 wcwidth==0.1.7
 webencodings==0.5.1
 Werkzeug==0.14.1
