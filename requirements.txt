@@ -43,7 +43,7 @@ dask==0.19.2
 datashape==0.5.4
 decorator==4.3.0
 defusedxml==0.5.0
-distributed==1.23.2
+distributed==2021.10.0
 docutils==0.14
 entrypoints==0.2.3
 et-xmlfile==1.0.1
